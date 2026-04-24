@@ -1,0 +1,9 @@
+Django==4.2.16
+djangorestframework==3.15.2
+djangorestframework-simplejwt==5.3.1
+django-cors-headers==4.3.1
+pymongo==4.7.3
+pandas==2.2.2
+scikit-learn==1.4.2
+pyarrow==16.0.0
+numpy==1.26.4
