@@ -58,7 +58,7 @@ DATABASES = {
 }
 
 # MongoDB connection
-MONGODB_URI = 'mongodb://localhost:27017'
+MONGODB_URI = os.environ.get('MONGODB_URI', 'mongodb://localhost:27017')
 MONGODB_DB = 'taxi_anomaly_db'
 
 # REST Framework
