@@ -6,6 +6,6 @@ pymongo==4.7.3
 pandas==2.2.2
 scikit-learn==1.4.2
 pyarrow==16.0.0
-numpy==1.26.4
 gunicorn==21.2.0
 dj-database-url==2.1.0
+numpy==1.26.4
