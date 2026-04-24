@@ -50,10 +50,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'core.wsgi.application'
 
-# MongoDB via pymongo (no SQLite/ORM needed)
+# Django ORM is not used — all data access is via pymongo.
+# sqlite3 is set as a no-op default to satisfy Django internals.
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.dummy',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': ':memory:',
     }
 }
 
